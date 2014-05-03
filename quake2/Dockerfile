@@ -8,5 +8,5 @@ run wget http://skuller.net/q2pro/nightly/q2pro-server_linux_amd64.tar.gz -O- | 
 expose 27910
 workdir /opt/quake2
 user quake2
-#run ./q2proded +config server.cfg
-run /bin/bash
+#run /bin/bash
+run ./q2proded +exec server.cfg +set dedicated 1 +set deathmatch 1
