@@ -43,7 +43,7 @@ Start the server and map it to port 27910:
 	# run in daemon mode
 	docker run -d -p 27910:27910/udp quake2/server1
 
-To run multiple servers: configure each server as suggested above, but do not change the *net_ip* or *net_port* settings. Use different port arguments to the `docker run` command to put servers on different ports, for example to run *server1* on port 27910 and *server2* on port 27999:
+**To run multiple servers**: configure each server as suggested above, but do not change the *net_ip* or *net_port* settings. Use different port arguments to the `docker run` command to put servers on different ports, for example to run *server1* on port 27910 and *server2* on port 27999:
 
 	docker run -d -p 27910:27910/udp quake2/server1
 	docker run -d -p 27999:27910/udp quake2/server2
@@ -64,4 +64,4 @@ Quake II allows for remote administration (changing maps and settings, kicking p
 	Refer to the official Quake II server guide for more information.
 
 ## Web hosting content for faster download
-#TODO
+*TODO*
