@@ -2,7 +2,7 @@
 This repository can be used for quickly standing up Quake II servers using Docker. The repository includes only free resources, the data from the Quake II demo, along with the latest nightly build from q2pro for the server software. In order to play maps and content from the full Quake II single player mission copy the pak0.pak file from your client install media into the baseq2 directory.
 
 ## Creating a new server
-To use the default settings (DM, Fraglimit 30, Timelimit 15mins) proceed to [building and deploying].
+To use the default settings (DM, Fraglimit 30, Timelimit 15mins) proceed to [building and deploying](#building-and-deploying).
 
 ### Customizing settings
 In order to keep track of server configs long term it's recommended to fork this repo and create a branch for each server. The branches can be revisited (and updated from master), then the docker images rebuilt when updates are necessary.
@@ -17,7 +17,7 @@ For servers that will be used on an on-going (non-temporary) basis the following
 	- timelimit
 	- fraglimit
 
-**Note about IP:PORT** Do not modify *net_ip* or *net_port*. Docker provides a method for mapping public ports to the containers network which is explained below in [building and deploying].
+**Note about IP:PORT** Do not modify *net_ip* or *net_port*. Docker provides a method for mapping public ports to the containers network which is explained below in [building and deploying](#building-and-deploying).
 
 
 #### Adding content (maps/models/skins/sounds)
