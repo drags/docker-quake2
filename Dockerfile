@@ -9,4 +9,4 @@ expose 27910
 workdir /opt/quake2
 user quake2
 #run /bin/bash
-cmd ./q2proded +exec server.cfg +set dedicated 1 +set deathmatch 1
+CMD ./q2proded +exec server.cfg +set dedicated 1 +set deathmatch 1
